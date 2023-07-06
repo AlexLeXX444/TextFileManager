@@ -16,7 +16,6 @@ public class SearchInFile {
         try(BufferedReader reader = new BufferedReader(new FileReader(file))) {
             for(String line : reader.lines().toList()) {
                 if(line.contains(searchString)) {
-                    //System.out.println("Строка найдена");
                     return true;
                 }
             }
