@@ -10,20 +10,21 @@ public class SearchInFile {
      * @param fileName     - имя файла в котором будем искать;
      * @param searchString - строка, которую будем искать;
      */
-    public static void searchString(String fileName, String searchString) {
+    public static boolean searchString(String fileName, String searchString) {
         File file = new File(fileName);
 
         try(BufferedReader reader = new BufferedReader(new FileReader(file))) {
             for(String line : reader.lines().toList()) {
                 if(line.contains(searchString)) {
-                    System.out.println("Строка найдена");
-                    return;
+                    //System.out.println("Строка найдена");
+                    return true;
                 }
             }
         } catch (IOException e) {
             System.out.println("Ошибка чтения файла!");
         }
 
-        System.out.println("Строка не найдена.");
+        //System.out.println("Строка не найдена.");
+        return false;
     }
 }
