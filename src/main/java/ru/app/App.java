@@ -1,7 +1,5 @@
 package ru.app;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 
 /**
@@ -12,7 +10,7 @@ import java.util.Random;
  */
 
 /**
- * 1. Написать функцию, создающую резервную копию всех файлов в директории(без поддиректорий) во вновь созданную папку ./backup;
+ * 1. (done) Написать функцию, создающую резервную копию всех файлов в директории(без поддиректорий) во вновь созданную папку ./backup;
  * 2. Доработайте класс Tree и метод print который мы разработали на семинаре. Ваш метод должен распечатать полноценно
  *    дерево директорий и файлов относительно корневой директории;
  * 3***. Предположить, что числа в исходном массиве из 9 элементов имеют диапазон[0, 3] и представляют собой, например,
@@ -34,6 +32,7 @@ public class App
     private static final String TO_SEARCH = "GeekBrains"; // строка для поиска.
 
     public static void main( String[] args ) {
+        /*
         RandomTextFileGenerator.generateFile("file_01.txt", FILE_LENGTH);
         RandomTextFileGenerator.generateFile("file_02.txt", FILE_LENGTH);
         FileConcatenator.concatenateFiles("file_01.txt", "file_02.txt", "file_concate_result.txt");
@@ -41,6 +40,9 @@ public class App
         SearchInFolder.searchAllFiles(".");
         SearchInFolder.searchAllFiles(TO_SEARCH);
         BackupFiles.backupFilesTxt(".");
+         */
+
+        FilesTree.printDirectoryTree(".", 0);
     }
 
 
