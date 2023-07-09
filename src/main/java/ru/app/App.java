@@ -3,15 +3,15 @@ package ru.app;
 import java.util.Random;
 
 /**
+ Основные задачи:
  1.  (done) Создать 2 текстовых файла, примерно по 50-100 символов в каждом(особого значения не имеет);
  2.  (done) Написать метод, «склеивающий» эти файлы, то есть вначале идет текст из первого файла, потом текст из второго;
  3.* (done) Написать метод, который проверяет, присутствует ли указанное пользователем слово в файле (работаем только с латиницей);
  4.* (done) Написать метод, проверяющий, есть ли указанное слово в папке.
- */
 
-/**
+ Дополнения:
  * 1. (done) Написать функцию, создающую резервную копию всех файлов в директории(без поддиректорий) во вновь созданную папку ./backup;
- * 2. Доработайте класс Tree и метод print который мы разработали на семинаре. Ваш метод должен распечатать полноценно
+ * 2. (done) Доработайте класс Tree и метод print который мы разработали на семинаре. Ваш метод должен распечатать полноценно
  *    дерево директорий и файлов относительно корневой директории;
  * 3***. Предположить, что числа в исходном массиве из 9 элементов имеют диапазон[0, 3] и представляют собой, например,
  *       состояния ячеек поля для игры в крестикинолики, где
@@ -32,7 +32,6 @@ public class App
     private static final String TO_SEARCH = "GeekBrains"; // строка для поиска.
 
     public static void main( String[] args ) {
-        /*
         RandomTextFileGenerator.generateFile("file_01.txt", FILE_LENGTH);
         RandomTextFileGenerator.generateFile("file_02.txt", FILE_LENGTH);
         FileConcatenator.concatenateFiles("file_01.txt", "file_02.txt", "file_concate_result.txt");
@@ -40,7 +39,7 @@ public class App
         SearchInFolder.searchAllFiles(".");
         SearchInFolder.searchAllFiles(TO_SEARCH);
         BackupFiles.backupFilesTxt(".");
-         */
+
 
         FilesTree.printDirectoryTree(".", 0);
     }
